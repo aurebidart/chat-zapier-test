@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Popup - Zapier Interfaces</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #0078d4;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.6em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            text-align: center;
+            margin-top: 40px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Chatbot con Ventana Emergente
+    </header>
+
+    <main>
+        <h2>Habla con nuestro asistente virtual</h2>
+        <p>Haz clic en el ícono de chat en la esquina inferior para comenzar la conversación.</p>
+
+        <!-- Bloque del Chatbot (popup) -->
+        <script async type='module'
+            src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+        <zapier-interfaces-chatbot-embed is-popup='true'
+            chatbot-id='cmgu34ejq001s10x878vj4c2o'></zapier-interfaces-chatbot-embed>
+    </main>
+
+    <footer>
+        © 2025 - Tu Empresa. Todos los derechos reservados.
+    </footer>
+</body>
+
+</html>
